@@ -126,7 +126,8 @@ Since the Pull Request (PR) has not been submitted to the vLLM community at this
 ```bash
 git clone -b v0.10.0 https://github.com/vllm-project/vllm.git
 cd vllm
-git apply Ling-V2/inference/vllm/bailing_moe_v2.patch
+wget https://raw.githubusercontent.com/inclusionAI/Ling-V2/refs/heads/main/inference/vllm/bailing_moe_v2.patch
+git apply bailing_moe_v2.patch
 pip install -e .
 ```
 
