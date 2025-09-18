@@ -48,8 +48,8 @@ You can download the following table to see the various stage of Ling-mini-2.0 m
 | Ling-mini-base-2.0-10T |        4K         | [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-base-2.0-10T) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-base-2.0-10T) |
 | Ling-mini-base-2.0-15T |        4K         | [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-base-2.0-15T) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-base-2.0-15T) |
 | Ling-mini-base-2.0-20T |        4K         | [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-base-2.0-20T) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-base-2.0-20T) |
-|   Ling-mini-base-2.0   |        32K         |     [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-base-2.0) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-base-2.0)     |
-|     Ling-mini-2.0      |        32K         |          [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-2.0) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-2.0)          |
+|   Ling-mini-base-2.0   |        32K -> 128K (YaRN)         |     [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-base-2.0) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-base-2.0)     |
+|     Ling-mini-2.0      |        32K -> 128K (YaRN)         |          [🤗 HuggingFace](https://huggingface.co/inclusionAI/Ling-mini-2.0) <br>[🤖 ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-mini-2.0)          |
 
 
 Note: If you are interested in previous version, please visit the past model collections in [Huggingface](https://huggingface.co/inclusionAI) or [ModelScope](https://modelscope.cn/organization/inclusionAI).
