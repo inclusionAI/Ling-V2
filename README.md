@@ -258,6 +258,9 @@ The table below shows the pre-training performance of several models, measured i
 
 We recommend you to use [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory) to [finetune Ling](./docs/llamafactory_finetuning.md). In addition to that, you can also use [Megatron for finetuning](./docs/megatron_sft_training.md).
 
+### Training on NPU
+[Ling-v2 NPU demo](https://modelers.cn/models/MindSpeed/Ling-V2) to Continue pretraining, finetuning and inference Ling models on NPU.
+
 ## License
 
 This code repository is licensed under [the MIT License](https://github.com/inclusionAI/Ling-V2/blob/master/LICENCE).
