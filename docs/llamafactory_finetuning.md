@@ -1,20 +1,19 @@
-## LLaMA-Factory Patch Use Doc
+## LLaMA-Factory Use Documentation
 
 This patch supports the OpenAI format and fc data with multiple tool calls
 
-### Apply Patch
+### Clone Repository
 
 ```bash
 # Clone LLaMA-Factory
 git clone https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
-# Checkout specify commit
-git checkout 50780499edce9217c857ebcd6402371aa3fe3c44
-# Apply patch, adjust the patch file directory as needed
-git apply Ling-V2/training/LLaMA-Factory/bailing_moe_v2.patch
+
+# Checkout specific commit
+git checkout d891bfedad9b3f3ca439af0180bdb6c0b1cfd4ab
+
 # Install
 pip install -e ".[torch,metrics]" --no-build-isolation
-
 ```
 
 ### Configuration Instructions
