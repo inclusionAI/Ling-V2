@@ -1159,8 +1159,8 @@ class BailingMoeV2Model(BailingMoeV2PreTrainedModel):
 
         self.word_embeddings = nn.Embedding(config.vocab_size, config.hidden_size, self.padding_idx)
         self.layers = []
-        for layer_idx in range(config.num_hidden_layers):
-            layer_cls = BailingMoeV2DecoderLayer if layer_idx < config.num_hidden_layers - config.num_nextn_predict_layers else BailingMoeV2MTPLayer
+        for layer_idx in range(config.num_hidden_layers + config.num_nextn_predict_layers):
+            layer_cls = BailingMoeV2DecoderLayer if layer_idx < config.num_hidden_layers else BailingMoeV2MTPLayer
             self.layers.append(layer_cls(config, layer_idx))
 
         self.layers = nn.ModuleList(self.layers)
