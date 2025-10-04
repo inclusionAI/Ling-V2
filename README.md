@@ -132,11 +132,7 @@ vLLM supports offline batched inference or launching an OpenAI-Compatible API Se
 Since the Pull Request (PR) has not been submitted to the vLLM community at this stage, please prepare the environment by following the steps below:
 
 ```bash
-git clone -b v0.10.0 https://github.com/vllm-project/vllm.git
-cd vllm
-wget https://raw.githubusercontent.com/inclusionAI/Ling-V2/refs/heads/main/inference/vllm/bailing_moe_v2.patch
-git apply bailing_moe_v2.patch
-pip install -e .
+pip install vllm==0.11.0
 ```
 
 #### Offline Inference:
@@ -149,7 +145,7 @@ tokenizer = AutoTokenizer.from_pretrained("inclusionAI/Ling-mini-2.0")
 
 sampling_params = SamplingParams(temperature=0.7, top_p=0.8, repetition_penalty=1.05, max_tokens=16384)
 
-llm = LLM(model="inclusionAI/Ling-mini-2.0", dtype='bfloat16')
+llm = LLM(model="inclusionAI/Ling-mini-2.0", dtype='bfloat16', trust_remote_code=True)
 prompt = "Give me a short introduction to large language models."
 messages = [
     {"role": "system", "content": "You are Ling, an assistant created by inclusionAI"},
@@ -171,7 +167,7 @@ outputs = llm.generate([text], sampling_params)
 vllm serve inclusionAI/Ling-mini-2.0 \
               --tensor-parallel-size 2 \
               --pipeline-parallel-size 1 \
-              --use-v2-block-manager \
+              --trust-remote-code \
               --gpu-memory-utilization 0.90
 ```
 
