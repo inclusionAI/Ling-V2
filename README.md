@@ -31,7 +31,7 @@ The highly sparse small-activation MoE architecture also delivers significant tr
 
 Ling 2.0 employs __FP8 mixed-precision training__ throughout. Compared with BF16, experiments with over 1T training tokens show nearly identical loss curves and downstream benchmark performance. To support the community in efficient continued pretraining and fine-tuning under limited compute, we are also open-sourcing our __FP8 training solution__. Based on tile/blockwise FP8 scaling, it further introduces FP8 optimizer, FP8 on-demand transpose weight, and FP8 padding routing map for extreme memory optimization. On 8/16/32 80G GPUs, compared with LLaMA 3.1 8B and Qwen3 8B, __Ling-mini-2.0 achieved 30–60% throughput gains with MTP enabled, and 90–120% throughput gains with MTP disabled__.
 
-### A More Open Opensource Strategy
+### A More Open-Source Strategy
 
 We believe Ling-mini-2.0 is an ideal starting point for MoE research. For the first time at this scale, it integrates 1/32 sparsity, MTP layers, and FP8 training — achieving both strong effectiveness and efficient training/inference performance, making it a prime candidate for the small-size LLM segment.
 To further foster community research, in addition to releasing the post-trained version, we are also open-sourcing __five pretraining checkpoints__: the pre-finetuning Ling-mini-2.0-base, along with four base models trained on 5T, 10T, 15T, and 20T tokens, enabling deeper research and broader applications.
@@ -68,7 +68,7 @@ Note: If you are interested in previous version, please visit the past model col
 ### Convert to safetensors
 
 Models with safetensors format can be downloaded from [HuggingFace](https://huggingface.co/inclusionAI) or [ModelScope](https://modelscope.cn/organization/inclusionAI).
-If you want to train your model and eval it, you can convert from dcp produced by training.
+If you want to train your model and evaluate it, you can convert from dcp produced by training.
 ```shell
 python tools/convert_dcp_to_safe_tensors.py --checkpoint-path ${DCP_PATH} --target-path ${SAFETENSORS_PATH}
 ```
