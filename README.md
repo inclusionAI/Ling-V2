@@ -263,7 +263,7 @@ We recommend you to use [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory
 
 ## License
 
-This code repository is licensed under [the MIT License](https://github.com/inclusionAI/Ling-V2/blob/master/LICENCE).
+This code repository is licensed under [the MIT License](https://github.com/inclusionAI/Ling-V2/blob/main/LICENSE).
 
 ## Citation
 
