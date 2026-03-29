@@ -217,7 +217,7 @@ BF16 and FP8 models are supported by SGLang now, it depends on the dtype of the 
 - Start server:
 ```shell
 python -m sglang.launch_server \
-    --model-path $MODEL_PATH \
+    --model-path ${MODEL_PATH} \
     --host 0.0.0.0 --port $PORT \
     --trust-remote-code \
     --attention-backend fa3
