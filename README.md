@@ -68,7 +68,7 @@ Note: If you are interested in previous version, please visit the past model col
 ### Convert to safetensors
 
 Models with safetensors format can be downloaded from [HuggingFace](https://huggingface.co/inclusionAI) or [ModelScope](https://modelscope.cn/organization/inclusionAI).
-If you want to train your model and evaluate it, you can convert from dcp produced by training.
+If you want to train your model and evaluate it, you can convert from DCP produced by training.
 ```shell
 python tools/convert_dcp_to_safe_tensors.py --checkpoint-path ${DCP_PATH} --target-path ${SAFETENSORS_PATH}
 ```
